@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1441916502@qq.com,  , LIC=21E4T-RP31T-Y8KFK-ZLYMC-P81H0-BNFNG
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  W:\APP_WAIGUO\keilstm32\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+D:\COPY_PROJECT\STM32_PROJECT\balance_wheel\self_blance_wheel\self_blance_mdk\Project\self_blance_mdk.uvprojx
+Project File Date:  09/28/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'W:\APP_WAIGUO\keilstm32\ARM\ARMCC\Bin'
+Build target 'self_driver_car2'
+compiling led.c...
+compiling blance.c...
+..\User\blance.c(45): warning:  #223-D: function "MPU6050_GetData" declared implicitly
+  			MPU6050_GetData(acc, gyro);
+..\User\blance.c(86): warning:  #188-D: enumerated type mixed with another type
+      OLED_PrintASCIIString(0, 0, buff, &afont8x6, 0);
+..\User\blance.c(88): warning:  #188-D: enumerated type mixed with another type
+  		OLED_PrintASCIIString(0, 10, buff, &afont8x6, 0);
+..\User\blance.c(89): warning:  #188-D: enumerated type mixed with another type
+  		OLED_DrawLine(0, 20, 0, 30, 0);
+..\User\blance.c: 4 warnings, 0 errors
+compiling encoder.c...
+compiling main.c...
+compiling dr_uart.c...
+..\Driver\dr_uart.c(79): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if (received_data >= 0 && received_data <= 255) 
+..\Driver\dr_uart.c: 1 warning, 0 errors
+compiling oled.c...
+compiling key.c...
+compiling motor.c...
+compiling buzzer.c...
+compiling delay.c...
+compiling vin.c...
+compiling soft_i2c.c...
+compiling mpu6050.c...
+linking...
+..\Output\self_blance_mdk.axf: Error: L6218E: Undefined symbol MPU6050_GetData (referred from blance.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+"..\Output\self_blance_mdk.axf" - 1 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_self_driver_car2
+  W:\APP_WAIGUO\keilstm32\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
