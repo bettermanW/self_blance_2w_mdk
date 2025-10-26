@@ -6,7 +6,7 @@
 ### 硬件组成（采用塔克创新openB20主控板）
 - IMU：MPU6050 6 轴（陀螺仪 + 加速度计）用于测角度／角速度测量
 * STM32F103RCT6，ARM Cortex-M3内核，72M主频，48KRAM，256KFLASH
-- ![开发版](Pasted image 20251018174715.png)
+- ![开发版](board.png)
 
 * MC310编码器减速电机 + 霍尔编码器 
 * + TB6612电机驱动器
@@ -41,7 +41,7 @@ flowchart TD
 
 
 * 用 IMU 的加速度计估计倾斜角
-	* ![](Pasted image 20251018182624.png)
+	* ![pitch](pitch.png)
 	1. 先确认小车的x\y\z三个的对应方向（x轴右侧，y轴前方，z轴垂直向上）
 	2. 将加速度单位转换为g,角速度为°/s
 	3. 计算俯仰角
